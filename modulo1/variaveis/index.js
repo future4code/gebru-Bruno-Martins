@@ -52,13 +52,13 @@
 
 // Exercicio 3
 
-let a = prompt("digite um valor para A")
-let b = prompt("Digite um valor para B")
-let c = prompt("valor de c", b)
-b = a
-a = c
+// let a = prompt("digite um valor para A")
+// let b = prompt("Digite um valor para B")
+// let c = prompt("valor de c", b)
+// b = a
+// a = c
 
 
-console.log("O novo valor de a é", a) // O novo valor de a é 25
-console.log("O novo valor de b é", b) // O novo valor de b é 10
+// console.log("O novo valor de a é", a) // O novo valor de a é 25
+// console.log("O novo valor de b é", b) // O novo valor de b é 10
 
