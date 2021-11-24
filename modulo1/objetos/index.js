@@ -21,10 +21,10 @@
 
 //Exercícios de escrita de código
 //1A
-const pessoa = {
-    nome: "Igor",
-    apelidos: ["Zumbi", "Mumia", "Lobisomem"]
-}
+// const pessoa = {
+//     nome: "Igor",
+//     apelidos: ["Zumbi", "Mumia", "Lobisomem"]
+// }
 
 // function apelidos (pessoa) {
 
