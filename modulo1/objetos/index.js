@@ -71,62 +71,6 @@
 // pessoa(objeto, objeto2)
 
 
-//Exercicio 3
-// //A
-// const Carrinho = []
-
-// //B
-
-// const Sacolao = {
-//     fruta: "banana",
-//     disponibilidade: true,
-// }
-
-
-// const sacolao2 = {
-//     Fruta: "Manga",
-//     disponibilidade: false,
-
-// }
-
-// const sacolao3 = {
-//     fruta: "Uva",
-//     disponibilidade: true
-// }
-
-// //c
-// Carrinho.push(Sacolao, sacolao2, sacolao3)
-// console.log(Carrinho)
-
-// Desafio 
-//1
-// const nome = prompt("Qual o seu nome?")
-// const idade = prompt("Qual a sua idade?")
-// const profissao = prompt("Qual a sua profissao?")
-
-// const dados = {
-//     nome: nome,
-//     idade: idade,
-//     profissao: profissao,
-// }
-
-// console.log(`${dados.nome}, ${dados.idade}, ${dados.profissao}`)
-// console.log(dados)
-
-// function dados(){
-
-// }
-
-// const primeiroFilme = {
-//     Lancamento: 2013,
-//     filme: "Circulo de fogo",
-// }
-
-// const segundoFilme = {
-//     lancamento: 2006,
-//     filme: "Todo mundo em panico"
-// }
-
 // Exercicio 3
 // //A
 // const Carrinho=[]
@@ -160,3 +104,22 @@
 
 //D
 // console.log(Carrinho)
+
+// Desafio 
+//1
+// const nome = prompt("Qual o seu nome?")
+// const idade = prompt("Qual a sua idade?")
+// const profissao = prompt("Qual a sua profissao?")
+
+// const dados = {
+//     nome: nome,
+//     idade: idade,
+//     profissao: profissao,
+// }
+
+// console.log(`${dados.nome}, ${dados.idade}, ${dados.profissao}`)
+// console.log(dados)
+
+// function dados(){
+
+// }
