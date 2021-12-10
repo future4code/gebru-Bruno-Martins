@@ -50,14 +50,12 @@ for (let i = 0; i < array.length; i++){
 
 // EXERCÍCIO 07
 function retornaObjetoEntreDoisNumeros(num1, num2) {
-if (num1 > num2) {
-  
-}
+
 }
 
 // EXERCÍCIO 08
 function retornaNPrimeirosPares(n) {
-   
+
 }
 
 // EXERCÍCIO 09
@@ -78,8 +76,10 @@ function retornaSegundoMaiorESegundoMenor(array) {
 
 // EXERCÍCIO 11
 function retornaChamadaDeFilme(filme) {
-   
+  
+   return `Venha assistir ao filme ${filme.nome}, de ${filme.ano}, dirigido por ${filme.diretor} e estrelado por ${filme.atores.join(", ")}.`
 }
+   
 
 // EXERCÍCIO 12
 function retornaPessoaAnonimizada(pessoa) {
