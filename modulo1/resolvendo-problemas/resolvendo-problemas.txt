@@ -20,3 +20,5 @@ verificar se esta funcionando de acordo com o enunciado.
 7- Refatorar
 conferir a aplicação de boas praticas, dar bons nomes as suas variaveis,
 ver o que pode ser melhorado em seu codigo, tentar diminuir todo processo para uma melhor vizualização( Melhor entendimento)!
+
+Bonus Ter sempre amigo Google em Mãos é todo suporte labenu!
