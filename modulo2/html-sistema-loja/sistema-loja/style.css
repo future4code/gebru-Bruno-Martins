@@ -1,0 +1,51 @@
+.footer.footer{
+    height: 100%;
+    background: #000;
+    position: relative;
+}
+.fale-conosco a{
+    text-decoration: none;
+}
+
+.contato{
+    margin-left: 45px;
+}
+.footer.footer .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.footer.footer .container > div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem 0.9rem;
+}
+.footer h2{
+    color: #fff;
+}
+.footer p{
+    font-size: 15px;
+    color: bisque;
+}
+.footer .sobre-nos{
+    margin-left: 30px;
+}
+.footer .texto-copy{
+    color: bisque;
+}
+
+.funcionarios {
+           border: none;
+           color: black;
+           padding: 16px 32px;
+           text-align: center;
+           text-decoration: none;
+           display: inline-block;
+           font-size: 30px;
+           margin: 40px 2px;
+           transition-duration: 0.4s;
+           cursor: pointer;
+}
+
+body{
+    background-color: cornsilk;
+}
