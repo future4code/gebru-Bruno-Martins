@@ -1,0 +1,24 @@
+1- Ter atenção no enunciado:
+Ali está o norte de qual raciocínio aplicar.( se pergunte, o que o codigo deve fazer?).
+
+2- Retirar informaçoes relevantes:
+separar palavras chaves, codigos, informaçoes para criação do codigo!
+
+3- Pensar nas entradas é saidas:
+Quais dados foram recebidos, criar uma função pra mostrar o que esta acontecendo!
+
+4- Fazer um esquema visual:
+deixar tudo claro na sua cabeça de como sera feito o processo! resolver o problema sem usar codigo.
+
+5- Criar um codigo feio:
+nao ter medo, colocar o codigo no papel, colocar todas as formas possiveis de resolver, escolha a melhor para voce!
+O importante é ter feito!
+
+6- Testar, força-bruta:
+verificar se esta funcionando de acordo com o enunciado.
+
+7- Refatorar
+conferir a aplicação de boas praticas, dar bons nomes as suas variaveis,
+ver o que pode ser melhorado em seu codigo, tentar diminuir todo processo para uma melhor vizualização( Melhor entendimento)!
+
+Bonus Ter sempre amigo Google em Mãos é todo suporte labenu!
