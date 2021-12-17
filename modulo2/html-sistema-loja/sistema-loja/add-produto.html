@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Adicionar Produto</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div>
+        <p>Natudog</p>
+    </div>
+    
+    <div>
+        <a href="index.html">Página Inicial</a>
+        <a href="ctrl-estoque.html">Controle de Estoque</a>
+        <a href="add-produto.html">Adicionar Produto</a>
+        <a href="funcionarios.html">Funcionários</a>
+    </div>
+
+    
+    <h2>Adicionar Produto</h2>
+    <form action="ctrl-estoque.html">
+        <div>
+            <label for="link-foto">Link para foto: </label>
+            <input type="url" id="link-foto" name="link-foto">
+        </div>
+        
+        <div>
+            <label for="descricao">Descrição do produto: </label>
+            <input type="text" id="descricao" name="descrição">
+        </div>
+        
+        <div>
+            <label for="preco">Preço (em R$): </label>
+            <!-- Adicione o id apropriado e o type para receber números abaixo -->
+            <input type="number" id="preco" name="preço">
+        </div>
+        
+        <div>
+            <!-- Preencha as propriedades necessárias para os elementos abaixo -->
+            <label for='quantidade'>Quantidade disponível: </label>
+            <input type="number" id="quantidade" name="Quantidade">
+        </div>
+
+        <div class="form-add">
+            <!-- Adicione ao type do botão abaixo o valor para que ele submeta o formulário -->
+            <button type="submit">Adicionar</button>
+        </div>
+
+    </form>
+    <footer class="footer">
+        <div class="container">
+            <div class="sobre-nos">
+                <h2>Sobre Nós</h2>
+                <p>Somos uma empresa dedicada a trazer produtos para o seu animal, na melhor qualidade com melhor preço!</p>
+                </div>
+                <div class="contato">
+                    <h2>Contato</h2>
+                    <p>Natudog@gmail.com</p>
+                    <p>Telefone: 11975824976</p>
+                </div>
+                <div class="fale-conosco">
+                <a href="#">
+                    <h2> Fale Conosco</h2>
+                </a>
+                <div class="Flex-row">
+                    </div>
+                </div>
+                <div class="rede-sociais">
+                    <h2>Rede Sociais</h2>
+
+                   <img src="img/facebook.png" width='50px' height='50px'/>
+                   <img src="img/174855.png" width='40px' height='40px'/>
+                   <img src="img/whatsapp.png" width='50px' height='50px'/>
+                     </div>
+                </div>
+             </div>
+             <div class="texto-copy">
+                Copyright© 2021
+             </div>
+             </footer>
+</body>
+</html>
