@@ -14,6 +14,7 @@ h2 {
     padding: 10px 5px 10px 5px;
     color: white;
     text-align: center;
+
 }
 
 input {
@@ -108,7 +109,8 @@ td button {
     background-color: #fadf63;
     width: 150px;
     height: 30px;
-    border-radius: 5px;
+    border-radius: 20px;
+    border-width: 2px;
     color: black;
 }
 
