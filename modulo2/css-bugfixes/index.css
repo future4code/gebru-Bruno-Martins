@@ -34,7 +34,7 @@ div>p:first-child {
 }
 
 div img {
-    background: black;
+    width: 50px;
 }
 
 .botao-amarelo {
@@ -135,4 +135,8 @@ td button {
 .botton{
  position: relative; bottom: 400px;
 
+}
+div>div img{
+    width: 20px;
+    height: 20px;
 }
