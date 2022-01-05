@@ -109,9 +109,12 @@ td button {
     background-color: #fadf63;
     width: 150px;
     height: 30px;
-    border-radius: 20px;
-    border-width: 2px;
     color: black;
+    border-bottom-width: 2px;
+    border-top-width: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    
 }
 
 .container-do-search {
@@ -126,6 +129,7 @@ td button {
     height: 20px;
     border: 1px solid black;
     border-radius: 5px;
+    border-width: 2px;
     font-size: 10px;
     color: black;
 }
