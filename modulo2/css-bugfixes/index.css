@@ -101,7 +101,7 @@ div:last-child {
 
 table {
     width: 50%;
-    margin-left: 28%;
+    margin: 0 auto;
 }
 
 td button {
@@ -139,4 +139,12 @@ td button {
 div>div img{
     width: 20px;
     height: 20px;
+}
+
+.botton-voltar{
+    text-align: center;
+}
+
+td button:hover{
+    background-color: #c44f00;
 }
