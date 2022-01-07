@@ -1,0 +1,43 @@
+* {
+ margin: 0;
+ padding: 0;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 40px 10fr 40px;
+    align-items: center;
+    background-color: mediumvioletred;
+}
+header button {
+    justify-self: end;
+}
+
+header img{
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.menu {
+    background-color: #f2d0e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 200vh;
+}
+main img{
+    max-width: 15px;
+    max-height: 15px;
+}
+
+footer {
+display: flex;
+justify-content: center;
+background: mediumvioletred;
+width: 100%;
+position: absolute;
+bottom: 0;
+left: 0;    
+}
+
+
