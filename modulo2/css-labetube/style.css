@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-color: #808080;
+    display: grid;
+    width: 100vw;
+    min-height: 100vh;
+    grid-template-rows: 60px 1fr 40px;
+    grid-template-columns: 300px 1fr 300px;
+}
+header{
+height: 60px;
+   background: #1C1C1C;
+   color: white;
+   display: flex;
+   justify-content:space-between;
+   align-items: center;
+    grid-column: 1/-1;
+}
+
+
+.labe-login{
+    display: flex;
+    justify-content: space-between;
+}
+
+.labe-text{
+    display: flex;
+    justify-content: space-around;
+}
+ 
+
+img {
+    max-width: 300px;
+    max-height: 300px;
+    
+   }
+
+main{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+    margin: 20px;
+    
+}
+
+footer {
+    height: 70px;
+    background: #1C1C1C;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/-1;
+ }
+
+.natureza{
+    display: flex;
+
+}
+
+@media screen and (max-device-width: 400px ){
+   .container{
+    background: white;
+    display: flex;
+    flex-direction: column;
+   }
+   
+    main{ 
+        display: flex;
+        flex-direction: column;
+       text-align: center;
+       background: white;
+    }
+ video{
+   width: 320px;
+   height: 192px;
+    
+}
+ 
+
+
+
+footer{
+    position: fixed;
+   bottom:0;
+   left: 0;
+   padding-right: 118px;
+
+}
+footer h2 {
+    left: 50px;  
+    position: relative;
+}
+ 
+}
