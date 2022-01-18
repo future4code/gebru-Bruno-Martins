@@ -61,3 +61,39 @@ footer {
     display: flex;
 
 }
+
+@media screen and (max-device-width: 400px ){
+   .container{
+    background: white;
+    display: flex;
+    flex-direction: column;
+   }
+   
+    main{ 
+        display: flex;
+        flex-direction: column;
+       text-align: center;
+       background: white;
+    }
+ video{
+   width: 320px;
+   height: 192px;
+    
+}
+ 
+
+
+
+footer{
+    position: fixed;
+   bottom:0;
+   left: 0;
+   padding-right: 118px;
+
+}
+footer h2 {
+    left: 50px;  
+    position: relative;
+}
+ 
+}
