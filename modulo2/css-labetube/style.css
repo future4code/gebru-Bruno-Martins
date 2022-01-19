@@ -62,11 +62,12 @@ footer {
 
 }
 
-@media screen and (max-device-width: 400px ){
+@media screen and (max-device-width: 500px ){
    .container{
     background: white;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
    }
    
     main{ 
@@ -74,18 +75,19 @@ footer {
         flex-direction: column;
        text-align: center;
        background: white;
+       margin-bottom: 268px;
+       align-items: center;
+       
     }
  video{
    width: 320px;
    height: 192px;
     
 }
- 
-
 
 
 footer{
-    position: fixed;
+
    bottom:0;
    left: 0;
    padding-right: 118px;
