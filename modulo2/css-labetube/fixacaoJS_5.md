@@ -14,4 +14,5 @@ const nomeAnimais = animais.map((pets) =>{
 })
 return nomeAnimais
 }
+
 ```
