@@ -35,4 +35,3 @@ Esse repositório vai acompanhar vocês até o final do curso, para mantermos a 
 ```
 
 Uma pasta para cada quinzena, dentro delas uma pasta para cada dia de aula e por fim uma pasta para o projeto quinzenal.
-configurando
