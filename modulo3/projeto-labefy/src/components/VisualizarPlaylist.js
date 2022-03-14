@@ -14,16 +14,31 @@ width: 400px;
 class VisualizarPlaylist extends React.Component {
 state = {
   allPlaylist: [],
-  click: 'false'
-  
+  click: 'false',
+  inputName: '',
+  inputArtist: '',
+  inputUrl: ''
 }
 
-addTrackToPlaylist = (idMusic) => {
-  const url = `https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/${idMusic}/tracks`
+handleInputName = (event) => {
+this.setState({inputName: event.target.value})
+}
+
+handleInputArtist = (event) => {
+  this.setState({inputArtist: event.target.value})
+}
+
+handleInputUrl = (event) => {
+  this.setState({inputUrl: event.target.value})
+}
+
+
+addTrackToPlaylist = (getAllPlaylists) => {
+  const url = `https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/${this.getAllPlaylists}/tracks`
   const body = {
-    name: '',
-    artist: '',
-    url: ''
+    name: this.state.inputName,
+    artist: this.state.inputArtist,
+    url: this.state.inputUrl
   }
   axios
   .post(url, body, {
@@ -31,7 +46,9 @@ addTrackToPlaylist = (idMusic) => {
       Authorization: 'bruno-martins-gebru'
     }
   })
-  .then(res => console.log(res))
+  .then((res) => {
+    this.setState({allPlaylist: res.data.result.tracks})
+  })
   .catch(err => console.error(err.response))
 }
 
@@ -109,11 +126,12 @@ getPlaylistTracks = (id) => {
               <source src={play.url}/>
                </audio>
               </label>
+
             </div>
           )
         } else if (this.state.click === 'false') {
           return (
-            <PlaylistCard>
+            <PlaylistCard key={play.id}>
             <li>{play.name}</li>
             <button onClick={() => this.deletePlaylist(play.id)}>Apagar</button>
             <button onClick={() => this.getPlaylistTracks(play.id)}>Detalhes</button>
