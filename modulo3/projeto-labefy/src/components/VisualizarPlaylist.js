@@ -13,11 +13,51 @@ width: 400px;
 
 class VisualizarPlaylist extends React.Component {
 state = {
-  allPlaylist: []
+  allPlaylist: [],
+  click: 'false'
+  
+}
+
+addTrackToPlaylist = (idMusic) => {
+  const url = `https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/${idMusic}/tracks`
+  const body = {
+    name: '',
+    artist: '',
+    url: ''
+  }
+  axios
+  .post(url, body, {
+    headers: {
+      Authorization: 'bruno-martins-gebru'
+    }
+  })
+  .then(res => console.log(res))
+  .catch(err => console.error(err.response))
+}
+
+getPlaylistTracks = (id) => {
+  const url = `https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/${id}/tracks`
+  axios
+  .get(url, {
+    headers: {
+      Authorization: 'bruno-martins-gebru'
+    }
+  })
+  .then((res) => {
+    this.setState(
+      {
+        click: 'true'
+      }
+    )
+    this.setState({allPlaylist: res.data.result.tracks})
+  })
+
+  // .then(res => console.log(res.data.result.tracks))
+  .catch(err => console.error(err.response))
 }
 
   componentDidMount() {
-    this.getAllPlaylists()
+    this.getAllPlaylists();
   }
 
   getAllPlaylists = () => {
@@ -52,19 +92,35 @@ state = {
 
 
  render(){
-  const renderAllPlaylists = this.state.allPlaylist.map((playlist) => {
-    return <PlaylistCard key={playlist.id}>
-      <li>{playlist.name}</li>
-      <button onClick={() => this.deletePlaylist(playlist.id)}>Apagar</button>
-    </PlaylistCard>
-  })
+ 
 
   return (
     <div>
-      <h1>
-       Visualizar Playlist
-      </h1>
-      <h3>{renderAllPlaylists}</h3>
+      {this.state.allPlaylist.map((play) => {
+        if (this.state.click === 'true') {
+          return (
+
+            <div key={play.id}>
+              <label 
+              onClick={() => this.getPlaylistTracks(play.id)}
+              >
+              <p>{play.name} - {play.artist}</p>
+              <audio controls={"controls"} type={"audio/mp3"}>
+              <source src={play.url}/>
+               </audio>
+              </label>
+            </div>
+          )
+        } else if (this.state.click === 'false') {
+          return (
+            <PlaylistCard>
+            <li>{play.name}</li>
+            <button onClick={() => this.deletePlaylist(play.id)}>Apagar</button>
+            <button onClick={() => this.getPlaylistTracks(play.id)}>Detalhes</button>
+          </PlaylistCard>
+          )
+        }
+      })}
     </div>
   )
  }
