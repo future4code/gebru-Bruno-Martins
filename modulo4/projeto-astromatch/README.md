@@ -2,7 +2,7 @@
 - Dentro da pasta projeto-atromatch, abra o terminal, de preferência git bash.
 - Dentro do terminal execute o comando 'npm start'.
 - Vai abrir no navegador o endereço http://localhost:3000, caso nao abra, clique no endereço.
-- Para finalizar a execução do projeto, basta dar um 'control c'(crtl + c) dentro do projeto 
+- Para finalizar a execução do projeto, basta dar um 'control c'(crtl + c) dentro do git bash.
 
 
 ### Projeto Astromatch
