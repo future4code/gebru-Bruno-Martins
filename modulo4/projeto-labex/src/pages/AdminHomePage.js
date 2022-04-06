@@ -5,6 +5,13 @@ import { goBack, goCreateTripPage, goTripDetailsPage } from "../routes/coordinat
 export default function AdminHomePage() {
  const navigate = useNavigate()
  const params = useParams()
+ useEffect(()=>{
+    const token = localStorage.getItem("token")
+    if(token === null) {
+        AdminHomePage(navigate)
+    }
+     },[navigate])
+
 
 
     return(
