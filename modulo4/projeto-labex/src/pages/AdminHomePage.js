@@ -22,7 +22,8 @@ export default function AdminHomePage() {
         axios
     .delete(url, headers)
     .then(res => {
-      alert('Viagem Deletada. Atualize a pagina!')
+        window.location.reload(false)
+      alert('Viagem Deletada.')
     })
     .catch(err => console.log(err.response))
   }
