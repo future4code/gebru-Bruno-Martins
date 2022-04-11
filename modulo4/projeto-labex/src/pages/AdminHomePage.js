@@ -22,8 +22,7 @@ export default function AdminHomePage() {
         axios
     .delete(url, headers)
     .then(res => {
-      alert('Viagem Deletada.')
-      
+      alert('Viagem Deletada. Atualize a pagina!')
     })
     .catch(err => console.log(err.response))
   }
@@ -34,6 +33,11 @@ export default function AdminHomePage() {
         <button onClick={()=> deletar(trip.id)}>Apagar</button>
         </div>
     })
+
+
+    // useEffect(()=> {
+    //     deletar()
+    // },[])
 
 //  useEffect(()=> {
 //      const URL = "https://us-central1-labenu-apis.cloudfunctions.net/labeX/bruno-martins-gebru/trip/BjbMS1Bmqhcn1PleJYRM"
@@ -66,7 +70,6 @@ export default function AdminHomePage() {
 
     return(
         <div>
-            <p>Para o administrador ver a lista de viagens e poder deletá-las ou acessar o detalhe de cada uma delas</p>
             <button onClick={()=>goBack(navigate)}>Voltar</button>
             <button onClick={()=>goCreateTripPage(navigate)}>Criar Viagem</button>
             <button onClick={()=>goBack(navigate)}>Sair</button>

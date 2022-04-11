@@ -21,7 +21,6 @@ console.log(listTrips)
     
     return(
         <div>
-            <p>Para vermos todas as viagens</p>
             <button onClick={()=>goBack(navigate)}>Voltar</button>
             <button onClick={()=>goApplicationFormPage(navigate)}>Inscrever</button>
             {trips}

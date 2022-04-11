@@ -9,7 +9,6 @@ export default function HomePage() {
     
     return(
         <div>
-            <p>Para o usuário escolher entre Área Administrativa e Lista de Viagens</p>
             <button onClick={()=>goListTripsPage(navigate)}>Viagens</button>
             <button onClick={()=>goLoginPage(navigate)}>Login</button>
         </div>

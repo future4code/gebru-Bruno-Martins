@@ -34,14 +34,13 @@ export default function LoginPage() {
             goAdminHomePage(navigate)
         })
         .catch((err)=>{
-            console.log("erro>", err.response)
+            console.log("error", err.response)
         })
     }
 
 
     return(
         <div>
-            <p>Para fazermos login como administrador</p>
 
             <input placeholder="Email" type="email" value={email} onChange={onChangeEmail}></input>
             <input placeholder="Senha" type="password" value={password} onChange={onChangePassword}></input>
