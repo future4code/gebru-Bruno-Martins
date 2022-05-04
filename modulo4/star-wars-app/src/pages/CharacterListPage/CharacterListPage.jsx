@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react"
 import { BASE_URL } from "../../constants/urls"
 import { CharacterCard } from "./styled"
 
-const CharacterListPage = () => {
+const CharacterListPage = (props) => {
     const [characterList, setCharacterList] = useState([])
 
 
@@ -21,7 +21,7 @@ const CharacterListPage = () => {
     
        const showCharacters = () => {
         return characterList.map((character, index) => {
-            return <CharacterCard key={index}>{character.name}</CharacterCard>
+            return <CharacterCard onClick={() => props.goToDetailsPage(character.url)} key={index}>{character.name}</CharacterCard>
         })
     }
 
