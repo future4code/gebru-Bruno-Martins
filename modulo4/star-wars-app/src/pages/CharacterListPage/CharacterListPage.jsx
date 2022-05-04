@@ -27,7 +27,7 @@ const CharacterListPage = (props) => {
 
     return (
        <div>
-            <h1>Lista de personagens</h1>
+            <h1>Lista de personagens.</h1>
             {showCharacters()}
        </div>
     )
