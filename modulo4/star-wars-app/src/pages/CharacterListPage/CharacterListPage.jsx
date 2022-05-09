@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import { CharacterCard } from "./styled"
+import { BagImg, CharacterCard } from "./styled"
 import {getCharacterList} from "../../services/request"
 
 const CharacterListPage = (props) => {
@@ -17,8 +17,10 @@ const CharacterListPage = (props) => {
 
     return (
        <div>
+           <BagImg>
             <h1>Lista de personagens.</h1>
             {showCharacters()}
+            </BagImg>
        </div>
     )
 }

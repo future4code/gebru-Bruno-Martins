@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import {getCharacterDetails, getPlanetDetails} from "../../services/request"
+import { CharacterPerson } from "./styled";
 
 
 const CharacterDetailPage = (props) => {
@@ -15,16 +16,16 @@ const CharacterDetailPage = (props) => {
         getPlanetDetails(details.homeworld, setPlanet)
     }, [details.homeworld])
 
-
+    //CharacterPerson
     return (
         <div>
            <h1>Detalhe de personagens</h1>
            {details.name && planet.name ?
-            <div> 
+            <CharacterPerson> 
             <p1>Nome: {details.name}</p1>
             <p1>    </p1>
             <p1>Planeta de origem: {planet.name}</p1>
-            </div> :
+            </CharacterPerson> :
             <p>Carregando...</p>}
            
            <button onClick={props.goTolistPage}>Voltar para lista de personagens</button>

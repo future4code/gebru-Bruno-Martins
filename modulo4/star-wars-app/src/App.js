@@ -27,7 +27,7 @@ const goTolistPage = () => {
   
 
   return (
-    <div>
+    <div >
       {selecPage()}
     </div>
   )
