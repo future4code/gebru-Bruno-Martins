@@ -12,11 +12,19 @@ export const CharacterCard = styled.div`
         background-color: lightblue;
     }
 
+    
 `
 
 export const BagImg = styled.div`
-margin: 0;
 background-image: url(${starwar});
-height: 100vh;
-width: 100vw;
+padding: 10px;
+background-position: center;
+background-size: cover;
+`
+
+export const TextCard = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
 `

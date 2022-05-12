@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
-import { BagImg, CharacterCard } from "./styled"
+import { BagImg, CharacterCard, TextCard } from "./styled"
 import {getCharacterList} from "../../services/request"
+
 
 const CharacterListPage = (props) => {
     const [characterList, setCharacterList] = useState([])
@@ -18,6 +19,7 @@ const CharacterListPage = (props) => {
     return (
        <div>
            <BagImg>
+               
             <h1>Lista de personagens.</h1>
             {showCharacters()}
             </BagImg>
