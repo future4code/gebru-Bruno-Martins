@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import {getCharacterDetails, getPlanetDetails} from "../../services/request"
-import { CharacterPerson } from "./styled";
+import { CharacterPerson, Container } from "./styled";
 
 
 const CharacterDetailPage = (props) => {
@@ -18,7 +18,7 @@ const CharacterDetailPage = (props) => {
 
     //CharacterPerson
     return (
-        <div>
+        <Container>
            <h1>Detalhe de personagens</h1>
            {details.name && planet.name ?
             <CharacterPerson> 
@@ -27,9 +27,10 @@ const CharacterDetailPage = (props) => {
             <p1>Planeta de origem: {planet.name}</p1>
             </CharacterPerson> :
             <p>Carregando...</p>}
-           
-           <button onClick={props.goTolistPage}>Voltar para lista de personagens</button>
-        </div>
+           <div>
+               <button onClick={props.goTolistPage}>Voltar</button>
+           </div>
+        </Container>
     )
 }
 
