@@ -21,7 +21,7 @@ const empresa: Funcionarios [] = [
 	{ nome: "Paola" ,salário: 3500, setor: Setores.MARKETING, presencial: true }
 ]
 
-const buscaSetor = (empresa:Funcionarios ) => {
+const buscaSetor = (empresa:Funcionarios[] ) => {
     const filtrarSetor = empresa.filter(
         (Funcionarios) => {
          return  Funcionarios.setor === Setores.MARKETING && Funcionarios.presencial === true
@@ -30,6 +30,6 @@ const buscaSetor = (empresa:Funcionarios ) => {
   return filtrarSetor
 }
 
-console.log(buscaPorSetor(array))
+console.log(buscaSetor(empresa))
 
 
