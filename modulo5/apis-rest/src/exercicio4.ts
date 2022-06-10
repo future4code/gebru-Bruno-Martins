@@ -12,7 +12,7 @@ export const addUsers = (req: Request, res: Response) => {
             errorCode = 422
             throw new Error("Não deixe nenhum parametro vazio")
         }
-        if(type != USER_TYPE.NORMAL && type != USER_TYPE.ADMIN){
+        if(type != USER_TYPE.NORMAL.toLowerCase() && type != USER_TYPE.ADMIN.toLowerCase()){
             errorCode = 422
             throw new Error("Inserir o tipo de usúario valido: NORMAL OU ADMIN")
         }
@@ -20,7 +20,7 @@ export const addUsers = (req: Request, res: Response) => {
             id: users.length + 1,
             name: name,
             email: email,
-            type: type,
+            type: type.toUpperCase(),
             age: age
         } 
         users.push(newUser)
