@@ -1,4 +1,4 @@
-enum USER_TYPE {
+export enum USER_TYPE {
     ADMIN = "ADMIN",
     NORMAL = "NORMAL"
 }
