@@ -18,14 +18,14 @@ export const createUser = async(req: Request, res: Response) => {
             "${email}"
         )
         `)
-        res.send("Usuario Adicionado.")
+        res.send("Usuario Criado.")
         
     } catch (error: any) {
         res.status(errorCode).send(error.message)
     }
 }
 
-export const searchId= async(req: Request, res: Response) => {
+export const searchId = async(req: Request, res: Response) => {
     let errorCode = 500
     try{
         const id = Number(req.params.id)
@@ -45,3 +45,25 @@ export const searchId= async(req: Request, res: Response) => {
         res.status(errorCode).send(error.message)
     }
 }
+
+export const changeUser = async(req: Request, res: Response) =>{
+    let errorCode = 500
+    try {
+        const id = req.params.id
+        const {name, nickname, email} = req.body
+
+        await connection("Users")
+        .update({
+            name,
+            nickname,
+            email
+        })
+        .where({
+            id
+        });
+        res.send("Dados Alterado.")
+    } catch (error: any) {
+        res.status(errorCode).send(error.message)
+    }
+}
+    
