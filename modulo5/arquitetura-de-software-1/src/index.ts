@@ -11,3 +11,4 @@ app.get('/allusers', userController.getAll)
 
 app.post("/createuser", userController.createUSer)
 
+app.delete('/delete/:id', userController.deleteUser)

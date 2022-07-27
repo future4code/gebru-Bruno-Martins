@@ -37,11 +37,19 @@ export class UserBusiness {
         }
     }
 
-    getAll = async (input: any) =>  {
-				
-        return await new UserDatabase().getAll()
-}
+    getAll = async (input: any) => {
 
+        return await new UserDatabase().getAll()
+    }
+
+    deleteUser = async (input: {id:string}) => {
+				
+        if(!input.id){
+            throw new Error("Insira um id!")
+        }
+
+return await new UserDatabase().deleteUser(input.id);
+}
 }
 
 

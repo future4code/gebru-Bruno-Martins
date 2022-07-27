@@ -11,3 +11,7 @@ Content-Type: application/json
 	"password": "theboss4"	
  }
 
+
+###
+
+DELETE http://localhost:3003/delete/1658886318145
