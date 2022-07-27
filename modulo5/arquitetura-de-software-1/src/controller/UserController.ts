@@ -1,5 +1,7 @@
+import { UserDatabase } from './../data/UserDatabase';
 import { Request, Response } from 'express'
 import { UserBusiness } from '../business/UserBusiness'
+import { user } from '../user'
 
 
 export class UserController {
@@ -24,20 +26,17 @@ export class UserController {
         }
     }
 
-
-    get = async (
-        req: Request,
-        res: Response
-        ) => {	
+  getAll = async (req: Request, res: Response) => {	
         try {
+            const users = new UserBusiness()
+           const input = await users.getAll(UserDatabase)
+          
 
-            const users = new UserBusiness();
 
-            res.send(users).status(200);
+            res.send(input).status(200);
 
         } catch (error:any) {
             res.send({ message: error.message }).status(error.status);
         }
     }
-
 }

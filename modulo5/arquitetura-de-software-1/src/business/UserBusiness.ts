@@ -1,4 +1,5 @@
-import { user } from '../user';
+import { user } from './../user';
+import { BaseDatabase } from './../data/BaseDatabase';
 import { UserDatabase } from './../data/UserDatabase';
 
 
@@ -36,14 +37,11 @@ export class UserBusiness {
         }
     }
 
-
-    get = async (input: any) => {
+    getAll = async (input: any) =>  {
 				
-        const result =  new UserDatabase()
-        return result
-    }
+        return await new UserDatabase().getAll()
+}
 
-    
 }
 
 

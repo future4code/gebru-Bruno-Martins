@@ -1,3 +1,7 @@
+GET http://localhost:3003/allusers
+
+###
+
 POST http://localhost:3003/createuser
 Content-Type: application/json
 
@@ -7,6 +11,3 @@ Content-Type: application/json
 	"password": "theboss4"	
  }
 
-###
-
-GET http://localhost:3003/all
