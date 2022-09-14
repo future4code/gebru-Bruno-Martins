@@ -3,6 +3,6 @@ const homer = {
    cartoon: "The Simpsons"
 }
 
-homer.phrase = "Moe, me vê mais uma Duff Beer!"
+homer.cartoon = "Moe, me vê mais uma Duff Beer!"
 
 console.log(homer);
