@@ -1,0 +1,8 @@
+```
+1 A - Round esta ligado a segurança da senha, quanto maior mais seguro vai ser sua senha, mas quanto maior for, mais demorado vai ser tempo de processamento.
+O valor recomendado é 12 pois é o valor que as libs usam.
+
+salt é uma string aleatoria que deixa mais complexo evitando ataques para descobrir as senhas
+
+2A - o codigo aonde faz o cadastro, pra receber toda informação para ai sim fazer a comparação.
+```
